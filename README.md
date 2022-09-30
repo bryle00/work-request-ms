@@ -1,1 +1,1 @@
-Brlye gwapo
+Brlye di-gwapo
