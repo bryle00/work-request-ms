@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\WorkRequestController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware;
+use App\Models\WorkRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,5 +46,7 @@ Route::post('/user/login/staff',[AuthController::class, 'staffLoginAuthenticatio
 Route::get('/admin/dashboard',[PageController::class,'adminDashboard'])->middleware('auth');
 Route::get('/requestor/dashboard',[PageController::class,'requestorDashboard'])->middleware('auth');
 Route::get('/staff/dashboard',[PageController::class,'staffDashboard'])->middleware('auth');
+
+Route::post('/user/workrequest',[WorkRequestController::class, 'workrequest']);
 
 Route::get('user/logout',[AuthController::class,'logout']);

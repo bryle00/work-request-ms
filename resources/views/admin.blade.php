@@ -55,9 +55,6 @@
 </div>
 
 
-
-
-
         {{-- logout funtcion --}}
         <br>
         @auth
